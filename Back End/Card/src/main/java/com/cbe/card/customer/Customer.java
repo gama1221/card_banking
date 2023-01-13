@@ -35,4 +35,12 @@ public class Customer {
 
     @Column(name = "status")
     private Boolean status;
+
+    public Customer( String  firstName, String  lastName, String accountNumber, String createdDate, Boolean status){
+        this.firstName=firstName;
+        this.lastName = lastName;
+        this.accountNumber = accountNumber;
+        this.cratedDate = createdDate;
+        this.status = status;
+    }
 }
